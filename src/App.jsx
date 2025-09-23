@@ -2,7 +2,6 @@ import React from 'react';
 
 const App = () => {
 
-    // Smooth scroll function
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,43 +32,40 @@ const App = () => {
       <div className="relative z-10">
         {/* Navigation */}
 <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-700/50">
-  <div className="max-w-6xl mx-auto px-4 py-4">
-    <div className="flex justify-between items-center">
-      {/* Navigation Links*/}
-          <div className="hidden md:flex space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-gray-300 hover:text-white transition-colors duration-300"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-gray-300 hover:text-white transition-colors duration-300"
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-gray-300 hover:text-white transition-colors duration-300"
-            >
-              Projects
-            </button>
+  <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="flex space-x-6">
+      <button 
+        onClick={() => scrollToSection('home')}
+        className="text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base"
+      >
+        Home
+      </button>
+      <button 
+        onClick={() => scrollToSection('about')}
+        className="text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base"
+      >
+        About
+      </button>
+      <button 
+        onClick={() => scrollToSection('projects')}
+        className="text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base"
+      >
+        Projects
+      </button>
+    </div>
 
-          </div>
-              
-              {/* Resume Button */}
-              <a
-                href="/nathanwu-resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 border border-gray-600/50"
-              >
-                Résumé
-              </a>
-            </div>
-          </div>
-        </nav>
+    {/* Resume Button - only show on medium screens and up */}
+    <a 
+      href="/nathanwu-resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hidden md:inline-block bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 border border-gray-600/50"
+    >
+      Résumé
+    </a>
+  </div>
+</nav>
+
 
         {/* Hero Section */}
         <section id="home" className="min-h-screen flex items-center justify-center px-4">
