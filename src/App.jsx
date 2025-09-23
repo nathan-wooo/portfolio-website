@@ -59,9 +59,10 @@ const App = () => {
           </div>
               
               {/* Resume Button */}
-              <a 
-                href="/resume.pdf" 
-                download="Nathan_Wu_Resume.pdf"
+              <a
+                href="/nathanwu-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 border border-gray-600/50"
               >
                 Résumé
