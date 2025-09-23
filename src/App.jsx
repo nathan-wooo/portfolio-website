@@ -55,12 +55,7 @@ const App = () => {
             >
               Projects
             </button>
-            <button 
-              onClick={() => scrollToSection('experience')}
-              className="text-gray-300 hover:text-white transition-colors duration-300"
-            >
-              Experience
-            </button>
+
           </div>
               
               {/* Resume Button */}
@@ -174,7 +169,9 @@ const App = () => {
           {/* Project Link */}
           <div className="mt-auto">
             <a 
-              href="#" 
+              href="https://github.com/nathan-wooo/vancouver-event-hub"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
             >
               View Project →
@@ -207,7 +204,9 @@ const App = () => {
           
           <div className="mt-auto">
             <a 
-              href="#" 
+              href="https://github.com/nathan-wooo/portfolio-website"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
             >
               View Project →
@@ -237,9 +236,10 @@ const App = () => {
             <span className="px-3 py-1 bg-blue-600/20 border border-blue-500/30 rounded-full text-xs text-blue-300">JSON</span>
             <span className="px-3 py-1 bg-red-600/20 border border-red-500/30 rounded-full text-xs text-red-300">JUnit</span>
           </div>
-          
           <a 
-            href="#" 
+            href="https://github.com/nathan-wooo/win-loss-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
           >
             View Project →
