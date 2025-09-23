@@ -116,7 +116,10 @@ const App = () => {
                 </h2>
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p>
-                    Hi I'm a third year Computer Science student at UBC. I like fitness and pokemon cards
+                Hey there! I’m Nathan, a third-year Computer Science student at UBC working toward my BSc in CS. 
+                I focus on software development and enjoy building tools that are practical and usable. 
+                One of my biggest goals is to create a product that reaches and helps people all around the world. 
+                Outside of coding and school, you’ll usually find me at the gym, exploring new food spots, or adding to my growing Pokémon card collection.
                   </p>
                 </div>
               </div>
