@@ -167,7 +167,9 @@ const App = () => {
           </div>
           
           {/* Project Link */}
-          <div className="mt-auto">
+
+        </div>
+          <div className="pb-6 px-6 mt-auto">
             <a 
               href="https://github.com/nathan-wooo/vancouver-event-hub"
               target="_blank"
@@ -177,7 +179,6 @@ const App = () => {
               View Project →
             </a>
           </div>
-        </div>
       </div>
 
       {/* Personal Portfolio */}
@@ -202,7 +203,9 @@ const App = () => {
             <span className="px-3 py-1 bg-cyan-600/20 border border-cyan-500/30 rounded-full text-xs text-cyan-300">Tailwind CSS</span>
           </div>
           
-          <div className="mt-auto">
+
+        </div>
+          <div className="pb-6 pl-6 mt-auto">
             <a 
               href="https://github.com/nathan-wooo/portfolio-website"
               target="_blank"
@@ -212,7 +215,6 @@ const App = () => {
               View Project →
             </a>
           </div>
-        </div>
       </div>
 
       {/* Win/Loss Tracker */}
@@ -236,15 +238,17 @@ const App = () => {
             <span className="px-3 py-1 bg-blue-600/20 border border-blue-500/30 rounded-full text-xs text-blue-300">JSON</span>
             <span className="px-3 py-1 bg-red-600/20 border border-red-500/30 rounded-full text-xs text-red-300">JUnit</span>
           </div>
-          <a 
-            href="https://github.com/nathan-wooo/win-loss-tracker"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
-          >
-            View Project →
-          </a>
         </div>
+          <div className="pb-6 pl-6 mt-auto">
+            <a 
+              href="https://github.com/nathan-wooo/win-loss-tracker"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
+            >
+              View Project →
+            </a>
+          </div>
       </div>
     </div>
   </div>
