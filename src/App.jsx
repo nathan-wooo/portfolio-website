@@ -56,7 +56,7 @@ const App = () => {
 
     {/* Resume Button - only show on medium screens and up */}
     <a 
-      href="/nathanwu-resume.pdf"
+      href="/resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="hidden md:inline-block bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 border border-gray-600/50"
@@ -116,7 +116,7 @@ const App = () => {
                 Hey there! I’m Nathan, a third-year Computer Science student at UBC working toward my BSc in CS. 
                 I focus on software development and enjoy building tools that are practical and usable. 
                 One of my biggest goals is to create a product that reaches and helps people all around the world. 
-                Outside of coding and school, you’ll usually find me at the gym, exploring new food spots, or adding to my growing Pokémon card collection.
+                Outside of coding and school, you’ll usually find me at the gym, exploring new food spots, or spending time with friends & family.
                   </p>
                 </div>
               </div>
