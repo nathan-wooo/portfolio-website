@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const App = () => {
 
-  const scrollToSection = (sectionId) => {
+  const [showCopyNotification, setShowCopyNotification] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("nathanwu2005@gmail.com");
+    setShowCopyNotification(true);
+    setTimeout(() => {
+      setShowCopyNotification(false);
+    }, 1500);
+  };
+
+  function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
@@ -10,7 +20,7 @@ const App = () => {
         block: 'start',
       });
     }
-  };
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white relative">
@@ -74,15 +84,23 @@ const App = () => {
               Nathan Wu
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Computer Science Student • Aspiring Software Developer
+              Computer Science Student • Software Developer
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="mailto:nathanwu2005@gmail.com"
-                className="border border-gray-600/50 bg-gray-800/30 hover:bg-gray-700/50 backdrop-blur-sm px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+            <div className="flex flex-wrap justify-center gap-4 relative">
+              {/* CONTACT BUTTON */}
+              <button 
+                onClick={handleCopyEmail}
+                className="border border-gray-600/50 bg-gray-800/30 hover:bg-gray-700/50 backdrop-blur-sm px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 text-white active:scale-95"
               >
                 Contact
-              </a>
+              </button>
+
+              {/* COPIED Noti */}
+              {showCopyNotification && (
+                <div className="absolute top-full mt-4 left-20 bg-green-600 text-gray-200 px-4 py-2 rounded-lg shadow-lg font-bold text-sm animate-bounce z-50">
+                  Email copied
+                </div>
+              )}
               <a 
                 href="https://github.com/nathan-wooo"
                 target="_blank"
@@ -142,7 +160,42 @@ const App = () => {
     </h2>
     
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+      {/* Jobtrackify */}
+      <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 flex flex-col h-full">
+        <div className="h-48 overflow-hidden">
+          <img 
+            src="/Jobtrackify.png" 
+            alt="Jobtrackify Screenshot"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-white mb-3">Jobtrackify</h3>
+          <p className="text-gray-300 text-sm mb-4 leading-relaxed">
+            Developed a modern job application tracker using Next.js and Tailwind CSS. Implemented complex client-side state management for drag-and-drop functionality and local data persistence.
+          </p>
+          
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="px-3 py-1 bg-gray-600/20 border border-gray-500/30 rounded-full text-xs text-gray-200">Next.js</span>
+            <span className="px-3 py-1 bg-blue-600/20 border border-blue-500/30 rounded-full text-xs text-blue-300">TypeScript</span>
+            <span className="px-3 py-1 bg-cyan-600/20 border border-cyan-500/30 rounded-full text-xs text-cyan-300">Tailwind CSS</span>
+            <span className="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-xs text-purple-300">dnd-kit</span>
+          </div>
+        </div>
+        <div className="pb-6 px-6 mt-auto">
+          <a 
+            href="https://jobtrackifyyy.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
+          >
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 flex flex-col h-full">
         <div className="h-48 overflow-hidden">
           <img 
             src="/Vancouver-Events-HUB.png" 
@@ -169,16 +222,16 @@ const App = () => {
           {/* Project Link */}
 
         </div>
-          <div className="pb-6 px-6 mt-auto">
-            <a 
-              href="https://github.com/nathan-wooo/vancouver-event-hub"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
-            >
-              View Project →
-            </a>
-          </div>
+        <div className="pb-6 px-6 mt-auto">
+          <a 
+            href="https://github.com/nathan-wooo/vancouver-event-hub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
+          >
+            View Project →
+          </a>
+        </div>
       </div>
 
       {/* Personal Portfolio */}
@@ -205,16 +258,16 @@ const App = () => {
           
 
         </div>
-          <div className="pb-6 pl-6 mt-auto">
-            <a 
-              href="https://github.com/nathan-wooo/portfolio-website"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
-            >
-              View Project →
-            </a>
-          </div>
+        <div className="pb-6 px-6 mt-auto">
+          <a 
+            href="https://github.com/nathan-wooo/portfolio-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
+          >
+            View Project →
+          </a>
+        </div>
       </div>
 
       {/* Win/Loss Tracker */}
@@ -239,16 +292,16 @@ const App = () => {
             <span className="px-3 py-1 bg-red-600/20 border border-red-500/30 rounded-full text-xs text-red-300">JUnit</span>
           </div>
         </div>
-          <div className="pb-6 pl-6 mt-auto">
-            <a 
-              href="https://github.com/nathan-wooo/win-loss-tracker"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
-            >
-              View Project →
-            </a>
-          </div>
+        <div className="pb-6 px-6 mt-auto">
+          <a 
+            href="https://github.com/nathan-wooo/win-loss-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 text-sm font-semibold transition-colors"
+          >
+            View Project →
+          </a>
+        </div>
       </div>
     </div>
   </div>
