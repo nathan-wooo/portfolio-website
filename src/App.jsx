@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const App = () => {
 
-  const scrollToSection = (sectionId) => {
+  const [showCopyNotification, setShowCopyNotification] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("nathanwu2005@gmail.com");
+    setShowCopyNotification(true);
+    setTimeout(() => {
+      setShowCopyNotification(false);
+    }, 1500);
+  };
+
+  function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
@@ -10,7 +20,7 @@ const App = () => {
         block: 'start',
       });
     }
-  };
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white relative">
@@ -74,15 +84,23 @@ const App = () => {
               Nathan Wu
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Computer Science Student • Aspiring Software Developer
+              Computer Science Student • Software Developer
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="mailto:nathanwu2005@gmail.com"
-                className="border border-gray-600/50 bg-gray-800/30 hover:bg-gray-700/50 backdrop-blur-sm px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+            <div className="flex flex-wrap justify-center gap-4 relative">
+              {/* CONTACT BUTTON */}
+              <button 
+                onClick={handleCopyEmail}
+                className="border border-gray-600/50 bg-gray-800/30 hover:bg-gray-700/50 backdrop-blur-sm px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 text-white active:scale-95"
               >
                 Contact
-              </a>
+              </button>
+
+              {/* COPIED Noti */}
+              {showCopyNotification && (
+                <div className="absolute top-full mt-4 left-20 bg-green-600 text-gray-200 px-4 py-2 rounded-lg shadow-lg font-bold text-sm animate-bounce z-50">
+                  Email copied
+                </div>
+              )}
               <a 
                 href="https://github.com/nathan-wooo"
                 target="_blank"
