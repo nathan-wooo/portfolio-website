@@ -194,6 +194,7 @@ const App = () => {
                 </div>
               </div>
 
+              {/* Vancouver Events Hub */}
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 flex flex-col h-full">
                 <div className="h-48 overflow-hidden">
                   <img 
@@ -202,23 +203,19 @@ const App = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                
-                {/* Project Content */}
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-3">Vancouver Events Hub</h3>
                   <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                     Built a React web application to help users discover Vancouver local events by integrating real-time data from the Ticketmaster API.
                   </p>
                   
-                  {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="px-3 py-1 bg-blue-600/20 border border-blue-500/30 rounded-full text-xs text-blue-300">React</span>
                     <span className="px-3 py-1 bg-yellow-600/20 border border-yellow-500/30 rounded-full text-xs text-yellow-300">JavaScript</span>
                     <span className="px-3 py-1 bg-pink-600/20 border border-pink-500/30 rounded-full text-xs text-pink-300">CSS</span>
                     <span className="px-3 py-1 bg-green-600/20 border border-green-500/30 rounded-full text-xs text-green-300">Ticketmaster API</span>
                   </div>
-                  
-                  {/* Project Link */}
 
                 </div>
                 <div className="pb-6 px-6 mt-auto">
