@@ -122,25 +122,25 @@ const App = () => {
         </section>
 
         {/* About */}
-        <section id="about" className="py-66 px-6">
-          <div className="max-w-6xl mx-auto px-0">
+        <section id="about" className="pt-16 pb-24 md:pb-32 px-4 md:px-6">
+          <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 pr-6">
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              <div className="space-y-6 md:pr-6">
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent text-center">
                   About Me
                 </h2>
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p>
-                    Hey there! I’m Nathan, a third-year Computer Science student at UBC working toward my BSc in CS. 
+                    Hey there! I'm Nathan, a third-year Computer Science student at UBC working toward my BSc in CS. 
                     I focus on software development and enjoy building tools that are practical and usable. 
                     One of my biggest goals is to create a product that reaches and helps people all around the world. 
-                    Outside of coding and school, you’ll usually find me at the gym, exploring new food spots, or spending time with friends & family.
+                    Outside of coding and school, you'll usually find me at the gym, exploring new food spots, or spending time with friends & family.
                   </p>
                 </div>
               </div>
 
-              <div className="flex justify-end pl-6">
-                <div className="w-110 h-110 rounded-2xl border border-gray-600/50 shadow-2xl overflow-hidden">
+              <div className="flex justify-center md:justify-end mt-8 md:mt-0 md:pl-6">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl border border-gray-600/50 shadow-2xl overflow-hidden">
                   <img 
                     src="/selfie.png" 
                     alt="Nathan Wu" 
