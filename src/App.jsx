@@ -70,7 +70,7 @@ const App = () => {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-block bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 border border-gray-600/50"
+              className="inline-block bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 transform hover:scale-105 border border-gray-600/50"
             >
               Résumé
             </a>
