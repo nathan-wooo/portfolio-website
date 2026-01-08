@@ -7,7 +7,7 @@ const projects = [
     alt: 'Jobtrackify Screenshot',
     title: 'Jobtrackify',
     description:
-      'Developed a modern job application tracker using Next.js and Tailwind CSS. Implemented complex client-side state management for drag-and-drop functionality and local data persistence.',
+      'A modern job application tracker that helps users organize and manage their job search. Features intuitive drag-and-drop functionality to track application statuses, with all data stored locally for privacy and offline access.',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'dnd-kit'],
     link: 'https://jobtrackifyyy.vercel.app/',
   },
@@ -16,7 +16,7 @@ const projects = [
     alt: 'Vancouver Events Hub Screenshot',
     title: 'Vancouver Events Hub',
     description:
-      'Built a React web application to help users discover Vancouver local events by integrating real-time data from the Ticketmaster API.',
+      'A web application that helps users discover and explore local events in Vancouver. Integrates with the Ticketmaster API to provide real-time event listings, making it easy to find concerts, sports, and entertainment happening in the city.',
     technologies: ['React', 'JavaScript', 'CSS', 'Ticketmaster API'],
     link: 'https://github.com/nathan-wooo/vancouver-event-hub',
   },
@@ -25,7 +25,7 @@ const projects = [
     alt: 'Personal Portfolio Screenshot',
     title: 'Personal Portfolio',
     description:
-      'Designed a responsive personal portfolio website as a central hub to showcase projects and professional information.',
+      'A responsive portfolio website showcasing my projects and professional background. Built with modern web technologies to provide a clean, accessible experience across all devices.',
     technologies: ['React', 'JavaScript', 'Tailwind CSS'],
     link: 'https://github.com/nathan-wooo/portfolio-website',
   },
@@ -34,7 +34,7 @@ const projects = [
     alt: 'Win Loss Tracker Screenshot',
     title: 'Win/Loss Record Tracker',
     description:
-      'Developed a desktop application with Swing GUI to track and visualize user outcomes for decision-making.',
+      'A desktop application designed to help users track and analyze decision outcomes. Features a Swing-based GUI for easy data entry and visualization, with persistent storage for long-term tracking.',
     technologies: ['Java', 'Swing', 'JSON', 'JUnit'],
     link: 'https://github.com/nathan-wooo/win-loss-tracker',
   },
