@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProjectSections from './ProjectSections.jsx';
+import Projects from './Projects.jsx';
 
 const App = () => {
 
@@ -65,7 +65,7 @@ const App = () => {
               </button>
             </div>
 
-            {/* Resume Button - only show on medium screens and up */}
+            {/* Resume Button */}
             <a 
               href="/resume.pdf"
               target="_blank"
@@ -77,7 +77,7 @@ const App = () => {
           </div>
         </nav>
 
-        {/* Hero Section */}
+        {/* Hero */}
         <section id="home" className="min-h-screen flex items-center justify-center px-4">
           <div className="text-center max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent leading-tight">
@@ -87,7 +87,7 @@ const App = () => {
               Computer Science Student • Software Developer
             </p>
             <div className="flex flex-wrap justify-center gap-4 relative">
-              {/* CONTACT BUTTON */}
+              {/* "Contact" button */}
               <button 
                 onClick={handleCopyEmail}
                 className="border border-gray-600/50 bg-gray-800/30 hover:bg-gray-700/50 backdrop-blur-sm px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 text-white active:scale-95"
@@ -95,7 +95,7 @@ const App = () => {
                 Contact
               </button>
 
-              {/* Copied notification */}
+              {/* "Copied" notification */}
               {showCopyNotification && (
                 <div className="absolute top-full mt-3 left-1/2 -translate-x-1/2 bg-gray-900/90 border border-green-400/40 text-green-300 px-4 py-2 rounded-full shadow-xl text-xs sm:text-sm font-medium backdrop-blur-md animate-bounce">
                   Email copied to clipboard
@@ -152,8 +152,8 @@ const App = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
-        <ProjectSections />
+        {/* Projects */}
+        <Projects />
 
 
       </div>
