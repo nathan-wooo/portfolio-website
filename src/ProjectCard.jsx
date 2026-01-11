@@ -43,12 +43,12 @@ const ProjectCard = ({ project }) => {
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
         <div className="h-24 mb-4">
-          <p className="text-gray-300 text-sm leading-relaxed line-clamp-4">
+          <p className="text-gray-300 text-sm leading-relaxed line-clamp-6">
             {description}
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mt-6 mb-2">
           {technologies.map((tech, index) => {
             const colorKey = techColorMap[tech] || 'gray';
             const classes = colorClasses[colorKey];
