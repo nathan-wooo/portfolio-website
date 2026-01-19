@@ -3,6 +3,15 @@ import ProjectCard from './ProjectCard.jsx';
 
 const projects = [
   {
+    image: '/LeetSpeak.png',
+    alt: 'LeetSpeak Screenshot',
+    title: 'LeetSpeak',
+    description:
+      'A modern Gemini API powered coding practice platform that helps developers prepare for technical interviews by practicing articulating their thought process out loud and recieving real time conversational feedback.',
+    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Gemini API', 'ElevenLabs API', 'Monaco Editor'],
+    link: 'https://leetspeak.tech/',
+  },
+  {
     image: '/Jobtrackify.png',
     alt: 'Jobtrackify Screenshot',
     title: 'Jobtrackify',

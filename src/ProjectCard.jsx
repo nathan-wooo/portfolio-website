@@ -13,6 +13,9 @@ const techColorMap = {
   'Swing': 'purple',
   'JSON': 'blue',
   'JUnit': 'red',
+  'Gemini API': 'green',
+  'ElevenLabs API': 'purple',
+  'Monaco Editor': 'gray',
 };
 
 const colorClasses = {
